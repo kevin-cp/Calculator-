@@ -1,0 +1,56 @@
+body {
+    background-image: linear-gradient(236deg, #74ebd5, #acb6e5);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+#container {
+    display: grid;
+    justify-content: center;
+    background-color: black;
+    border: rgba(46, 47, 63, 0.747) solid 10px;
+    border-radius: 12px;
+    height: 500px;
+    max-width: 400px;
+}
+
+#display {
+    height: 100px;
+    width: 395px;
+    border: solid 5px black;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    text-align: right;
+    font-size: 100px;
+    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+#digits {
+    display: grid;
+    font-weight: bold;
+    height: 385px;
+    width: 402px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:  repeat(5, 1fr);
+    border: 0.1px rgb(233, 227, 227);
+    
+
+}
+
+#equal {
+    background-color : rgb(35, 136, 231);
+    grid-row: span 2;
+    color: white;
+    
+} 
+
+.operator {
+    background-color: rgb(223, 215, 215);
+    border: solid 0.1px rgb(151, 144, 144);
+    color: rgb(35, 136, 231);
+    font-size: 20px;
+}
